@@ -6,3 +6,15 @@
 # Выведите «YES», если можно отломить от шоколадки ровно k долек, и «NO» иначе.
 
 # TODO: your code here
+n = int(input("n: "))
+m = int(input("m: "))
+k = int(input("k: "))
+square = 1  # Площадь фигуры
+if k != n * m:
+    square = n * m
+    if square % 2 == 0:
+        print("YES")
+    else:
+        print("NO")
+else:
+    print("Введенные значения не соответствуют условию...")
