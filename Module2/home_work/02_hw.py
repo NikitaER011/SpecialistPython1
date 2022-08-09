@@ -8,3 +8,16 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+total_cow = int(input("На лугу пасется..."))
+
+if (total_cow % 100) == 11 or (total_cow % 100) == 12 or (total_cow % 100) == 13 or (total_cow % 100) == 14:
+    print(total_cow, "Коров")
+elif (total_cow % 10) == 1:
+    print(total_cow, "Корова")
+elif (total_cow % 10) == 0 or (total_cow % 10) == 5 or (total_cow % 10) == 6 or (total_cow % 10) == 7 or\
+        (total_cow % 10) == 8 or (total_cow % 10) == 9:
+    print(total_cow, "Коров")
+elif (total_cow % 10) == 2 or (total_cow % 10) == 3 or (total_cow % 10) == 4:
+    print(total_cow, "Коровы")
+    
+    # Очень интересное задание, так долго я еще ни одну задачу не решал) Отладку провел, чисел 40 перебрал: вроде все правильно работает.
